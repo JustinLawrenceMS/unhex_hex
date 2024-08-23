@@ -1,0 +1,7 @@
+#!/bin/bash
+
+for i in $(echo $1 | xargs -n 2); do
+    printf "\x$i"
+done
+
+printf "\n"
